@@ -1,0 +1,27 @@
+start = recipe
+recipe = element recipe {(title| ingList| directions | space)*}
+
+title = element title {text, mixed{(difficulty | brand| time | serving | unit |measurement)*}}
+difficulty = element difficulty {text}
+brand = element brand {text*, company*}
+company = attribute company {xsd:ID}
+time = element time {(unit | text |measurement| unit)*}
+serving = element serving {measurement, unit, text}
+unit = attribute unit {text}
+measurement = attribute measurement {text}
+space = element space {empty}
+ingList = element ingList {ingTitle , ing*}
+ingTitle = element ingTitle {text}
+ing = element ing {text, mixed{(num | measurement| unit| trait| required| prep)*}}
+num = attribute num {xsd:integer}
+trait = attribute trait {"dry" | "wet" |"Mix-In Ing"}
+required = element required {(text |detail)*}
+prep= element prep {detail}
+detail = attribute detail {text}
+
+directions= element directions {(directTitle| step| helpfulInfo)*}
+directTitle = element directTitle {text}
+step = element step { mixed {(num| unit| measurement| prep| required| tool| time| ing |temp)*}}
+temp = element temp {(text| unit | measurement)*}
+tool = element tool {text}
+helpfulInfo = element helpfulInfo {(text| detail |prep| ing|time)*}

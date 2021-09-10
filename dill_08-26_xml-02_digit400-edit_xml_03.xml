@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Relax-NG-Recipe.rnc" type="application/relax-ng-compact-syntax"?>
+<recipe>
+    <title>Cookies Original <brand company="Nestle">NESTLÉ® TOLL HOUSE®</brand> Chocolate Chip
+        Cookies <difficulty>Level Easy</difficulty>
+        <time unit="minutes">Prep 15 minutes</time>
+        <time unit="minutes">Cook 9 minutes</time>
+        <serving measurement="5" unit="dozen"> Servings 5 dozen cookies </serving></title>
+    <space/>
+    <ingList>
+        <ingTitle>Ingredients</ingTitle>
+        <ing num="1" measurement="2.25" unit="cup" trait="dry">2 1/4 cups all-purpose flour</ing>
+        <ing num="2" measurement="1" unit="teaspoon" trait="dry">1 teaspoon baking soda</ing>
+        <ing num="3" measurement="1" unit="teaspoon" trait="dry">1 teaspoon salt</ing>
+        <ing num="4" measurement="1" unit="cup" trait="wet">1 cup (2 sticks) butter, <required
+                detail="softened">softened</required></ing>
+        <ing num="5" measurement="0.75" unit="cup" trait="wet">3/4 cup granulated sugar</ing>
+        <ing num="6" measurement="0.75" unit="cup" trait="wet">3/4 cup packed<prep detail="packed"/>
+            brown sugar</ing>
+        <ing num="7" measurement="1" unit="teaspoon" trait="wet">1 teaspoon vanilla extract</ing>
+        <ing num="8" measurement="2" trait="wet">2 large eggs</ing>
+        <ing num="9" measurement="2" unit="cups" trait="Mix-In Ing">2 cups (12-ounce package)
+            NESTLÉ® TOLL HOUSE® Semi-Sweet Chocolate Morsels</ing>
+        <ing num="10" measurement="1 cup or 1-2 tablespoons" trait="Mix-In Ing"> 1 cup chopped
+                nuts<prep detail="chopped"/>(Optional. If omitting, add 1 to 2 Tbsp. of all-purpose
+            flour.)</ing>
+    </ingList>
+    <space/>
+    <directions>
+        <directTitle>Make It</directTitle>
+        <step num="1">Step 1 <required>Preheat</required> oven to <temp unit="fahrenheit"
+                measurement="375 degrees">375° F</temp>.</step>
+        <step num="2">Step 2 Combine<prep detail="Combine"/>
+            <ing num="1">flour</ing>, <ing num="2">baking soda</ing> and <ing num="3">salt</ing> in
+                <tool>small bowl</tool>. Beat<prep detail="Beat"/>
+            <ing num="4">butter</ing>, <ing num="5">granulated sugar</ing>, <ing num="6">brown
+                sugar</ing> and <ing num="7">vanilla extract</ing> in <tool>large mixer bowl</tool>
+            until creamy.<prep detail="creamy"/> Add <ing num="8">eggs</ing>, one at a time,<prep
+                detail="one at a time"/> beating<prep detail="beating"/> well after each addition.
+            Gradually beat<prep detail="gradually beat"/> in flour mixture. Stir in<prep
+                detail="stir in"/>
+            <ing>morsels</ing> and <ing num="11">nuts</ing>. Drop<prep detail="drop"/> by rounded
+            tablespoon onto ungreased<prep detail="ungreased"/>
+            <tool>baking sheets</tool>.</step>
+        <step num="3">Step 3 Bake<prep detail="bake"/> for <time>9 to 11 minutes</time> or until
+            golden brown.<prep detail="golden brown"/> Cool<prep detail="cool"/> on <tool>baking
+                sheets</tool> for <time>2 minutes</time>; remove<prep detail="remove"/> to
+                <tool>wire racks</tool> to cool completely.<prep detail="cool"/></step>
+        <helpfulInfo>For High Altitude Baking (5,200 feet): Increase<prep detail="increase"/>
+            <ing num="1" measurement="2.5" unit="cups">flour to 2 1/2 cups.</ing><ing num="12"
+                measurement="2 and 0.666" unit="teaspoons">Add<prep detail="add"/> 2 teaspoons
+                water</ing> with flour and reduce<prep detail="reduce"/> both <ing>granulated sugar
+                and brown sugar to 2/3 cup each.</ing> Bake<prep detail="bake"/> drop cookies for
+                <time measurement="8 to 10" unit="minutes">8 to 10 minutes</time> and pan cookie for
+                <time measurement="17 to 19" unit="minutes">17 to 19 minutes.</time></helpfulInfo>
+    </directions>
+</recipe>
