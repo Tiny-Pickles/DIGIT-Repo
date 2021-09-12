@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-   <emilyDickinson> <teiHeader>
+<emilyDickinson> <!-- needed a root element -->
+       <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Poem 6 (J 281: 1861/1935)</title>
+                <title>Poem 6 (J 281: 1861/1935)</title><!-- closing element needed a lowercase t -->
                 <author>Emily Dickinson</author>
             </titleStmt>
             <publicationStmt>
-                <p>Fascicle 16: Dickinson's variants and published versions</p>
+                <p>Fascicle 16: Dickinson's variants and published versions</p> <!-- end closing element needed a / -->
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
@@ -27,31 +28,31 @@
                 <listRef>
                     <ptr target="xml/1606variant.xml"/>
                     <ptr target="img/1606/fs1606a.jpg"/>
-                    <ptr target= "img/1606/fs1606b.jpg"/>
+                    <ptr target= "img/1606/fs1606b.jpg"/> <!-- attribute needed an = sign -->
                     <ptr target="img/1606/1606fha.jpg"/>
                     <ptr target="img/1606/1606fhb.jpg"/>
                     <ptr target="img/1606/1606fhMap.jpg"/>
                     <ptr target="img/1606/fs1606Map.jpg"/>
-                </listRef>
+                </listRef><!-- closing element needed a lowercase l -->
             </div>
             <div type="witness">
                 <listWit>
                     <witness xml:id="df16">
                         <bibl>
-                            <title>ORIGINAL POEMS</title><author>Emily Dickinson</author>
+                            <title>ORIGINAL POEMS</title><!-- title element need to close before the start of the author element --><author>Emily Dickinson</author>
                         </bibl>
                     </witness>
-                    <witness xml:id="fh">
+                    <witness xml:id="fh"><!-- attribute needed last " -->
                         <bibl>
                             <title>Final Harvest: Emily Dickinson's Poems</title>
                             <author>Emily Dickinson</author>
                             <editor>Thomas H. Johnson</editor>
-                            <pub type ="place">Boston</pub>
-                            <publisher>Little, Brown &amp; Company</publisher>
+                            <pub type ="place">Boston</pub><!-- remove place atrribute from closing element -->
+                            <publisher>Little, Brown &amp;<!-- needed the &amp; --> Company</publisher>
                             <date>1961</date>
-                        </bibl>
+                        </bibl> <!-- needed closing element for bibl -->
                     </witness>
-                    </listWit>
+                </listWit><!-- needed closing element for istWit -->
             </div>
         </front>
         <body>
@@ -104,7 +105,7 @@
                     </app>
                     and Cold—
                 </l>
-                <l n="10">But that will hold—</l>
+                <l n="10">But that will hold—</l><!-- attribute needed first " -->
                 <l n="11">If any are not sure—</l>
                 <l n="12">We show them—prayer—</l>
                 <l n="13">But we, who know,</l>
@@ -123,7 +124,7 @@
                     And so of
                     <app>
                         <rdg wit="#df16">Wo</rdg>
-                        <rdg wit="#fh">Woe</rdg>
+                        <rdg wit="#fh">Woe</rdg><!-- closing element needed last / -->
                     </app>
                     , bleak dreaded—
                     <app>
