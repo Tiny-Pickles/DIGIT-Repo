@@ -14,7 +14,7 @@ padding: 5em;
  * Then we controlled the width of the image **inside** the picture frame of the <figure>: it's allowed to fill 100% of the figure element, but can't get larger than 300 pixels.
  * You can give any element a background-color property, so we are showing how to do it here.  */
  
-figure {background-color:grey; margin:1em; width: 30%;} 
+figure {background-color:grey; margin:1em; width: 25%;} 
 figcaption {font-style:italic; font-size:.8em;}
 figure img {max-width:455px; width:100%;}
 /* Notice how the last rule is written: figure image {properties} . 
