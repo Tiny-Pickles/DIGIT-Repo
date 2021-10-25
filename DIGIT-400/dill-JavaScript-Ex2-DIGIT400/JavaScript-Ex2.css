@@ -43,11 +43,8 @@ input {
     text-align: justify;  
 }
 
-.highlight{
-    color: #bada55;
-    font-size: 1.5rem;
-}
-.colorchange{
-    color: rebeccapurple;
-    font-size: 2.0rem;
+.highlight
+{
+ color:blue;
+ text-decoration:underline;
 }

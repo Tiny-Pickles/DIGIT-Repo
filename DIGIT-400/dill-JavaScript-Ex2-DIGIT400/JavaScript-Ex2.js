@@ -1,17 +1,24 @@
-function init() {
-    var fieldset = document.getElementsByTagName('input');
-    for (var i = 0; i < fieldset.length; i++) {
-        fieldset[i].addEventListener('click', toggle, false);
-    }
-}
+window.addEventListener( 'DOMContentLoaded',pageLoadUp,false);
+ var search=document.getElementById("content")
 
-function toggle() {
-     var paras = document.getElementsByTagName("p")
-    switch (id) {
-        case "p1": {
-            var para1 = document.getElementsByClassName("p");
-            for (var i = 0; i < chars.length; i++) {
-                chars[i].classList.toggle("on")
+function pageLoadUp() {
+    alert ('The page loaded');
+    var input = document.getElementById("input")
+    {input[0].addEventListner("click", searchMe, false)}
+} 
+let p = document.getElementById("p");
+
+function searchMe(){
+let input = document.getElementById("input");
+let filter = input.value.toUpperCase();
+let searchArea=document.getElementById("p1")
+
+if (searchArea[0].innerHTML.toUpperCase().indexOf(filter) > -1) searchArea [0]
+
+if (input !==''){
+    let regExp = new RegExp(input, "gi");
+    p.innerHTML = (p.textContent).replace(regExp, "<mark>${searched}</mark>'");
 }
-            
+}
+    
 
