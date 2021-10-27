@@ -9,11 +9,15 @@
         <script src="#">/**/</script>
     </head>
     <body>
-        <?php
+        <h1>Timeline</h1> 
+<ul>       
+<?php
     require_once("config.php");
-    $contents = REST_PATH . "/db/ged5131/dill-XQueryPHP-Ex1-DIGIT400.xql";
+    $issueDate = htmlspecialchars($_GET["issueDate"]);
+    $contents = REST_PATH . "/db//ged5131/dill-XQueryPHP-Ex1-EDITS.xql";
     $result = file_get_contents($contents);
     echo $result;
 ?>
+</ul>    
     </body>
 </html>
