@@ -6,6 +6,7 @@
     </head>
     <body>
         <h1>Article Display</h1>
+        <h1><?php require_once("config.php"); echo htmlspecialchars($_GET["newspaperArticles"])?></h1>
         <ul>
             <?php require_once("config.php");
     $contents = REST_PATH . "/db//ged5131/dill-article-displayPHP.xql";
