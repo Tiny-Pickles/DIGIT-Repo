@@ -2,14 +2,34 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
     <desc>I want to make a bar graph to show the differernt types of trees.</desc>
-    <g alignment-baseline="baseline">
-        <line x1="30" y1="500" x2="500" y2="500" stroke="#18191A" stroke-width="2"/> 
-        <text x="250" y="-10" fill="red" transform="rotate(90,0,0)">y axis</text>
-        <line x1="30" y1="15" x2="30" y2="500" stroke="#18191A" stroke-width="2"/> 
-        <text x="250" y="520" fill="red">x axis</text>
-        <rect  x="100" y ="95" width="40" height="404" style="fill:#6495ED;stroke-width:3" />
-        <rect  x="200" y ="434" width="40" height="65" style="fill:#6495ED;stroke-width:3" />
-        <rect  x="300" y ="399" width="40" height="100" style="fill:#6495ED;stroke-width:3" />
-        
+    <g alignment-baseline="baseline" transform="translate (100, 200)">
+        <line x1="100" y1="500" x2="500" y2="500" stroke="#18191A" stroke-width="2"/> 
+        <text x="250" y="-25" fill="black" transform="rotate(90,0,0)">y axis (sq mi)</text>
+        <line x1="100" y1="15" x2="100" y2="500" stroke="#18191A" stroke-width="2"/> 
+        <text x="250" y="520" fill="black">x axis</text>
+        <line x1="90" y1="450" x2="110" y2="450" stroke="#18191A" stroke-width="2"/>
+        <line x1="90" y1="400" x2="110" y2="400" stroke="#18191A" stroke-width="2"/> 
+        <line x1="90" y1="350" x2="110" y2="350" stroke="#18191A" stroke-width="2"/> 
+        <line x1="90" y1="300" x2="110" y2="300" stroke="#18191A" stroke-width="2"/> 
+        <line x1="90" y1="250" x2="110" y2="250" stroke="#18191A" stroke-width="2"/> 
+        <line x1="90" y1="200" x2="110" y2="200" stroke="#18191A" stroke-width="2"/>
+        <line x1="90" y1="150" x2="110" y2="150" stroke="#18191A" stroke-width="2"/>
+        <line x1="90" y1="100" x2="110" y2="100" stroke="#18191A" stroke-width="2"/>
+        <line x1="90" y1="50" x2="110" y2="50" stroke="#18191A" stroke-width="2"/>
+        <text x="50" y="450" fill="#02386E">50</text>
+        <text x="50" y="400" fill="#02386E">100</text>
+        <text x="50" y="350" fill="#02386E">150</text>
+        <text x="50" y="300" fill="#02386E">200</text>
+        <text x="50" y="250" fill="#02386E">250</text>
+        <text x="50" y="200" fill="#02386E">300</text>
+        <text x="50" y="150" fill="#02386E">300</text>
+        <text x="50" y="100" fill="#02386E">400</text>
+        <text x="50" y="50" fill="#02386E">450</text>
+        <rect  x="200" y ="95" width="40" height="404" style="fill:#6495ED;stroke-width:3" />
+        <rect  x="300" y ="434" width="40" height="65" style="fill:#D5AD36;stroke-width:3" />
+        <rect  x="400" y ="399" width="40" height="100" style="fill:#FE612C;stroke-width:3" />
+        <text x="250" y="-215" fill="black" transform="rotate(90,0,0)">Tahiti 404 sq mi</text>
+        <text x="250" y="-315" fill="black" transform="rotate(90,0,0)">Raiatea 65  sq mi</text>
+        <text x="250" y="-415" fill="black" transform="rotate(90,0,0)">Tongatapu 100  sq mi</text>
     </g>
 </svg>
