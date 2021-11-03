@@ -1,0 +1,75 @@
+1A)
+Expression: //sd => count()
+Results: 524
+
+1B)
+Expression: //sd[contains(., "Russian")]
+Results: 11 items
+
+1C)
+Expression: //Heading/following-sibling::sd[1] or //Scene/sd[1]
+Results: 172 items
+
+1D)
+Expression: //Heading/following-sibling::sd[1][contains(., "computers")]
+Results: 4 items
+
+1E)
+Expression: //Scene[not(sd)]
+Results: 2 items 
+
+
+2A)
+Expression: //sp ! string() 
+Results: 649 items
+Explanation: ged: the string() operator will print 
+all the whole string and it does not display 
+the location. If you do not use the 
+! string() oprator, XPath will display 
+the location.  
+
+2B)
+Expression: //sp[text()] 
+Results: 649 items
+Explanation: ged: the text() function will print 
+all the text  that is within the element node.
+
+2C)
+Expression: //sp/string-length()
+Results: 649 items 
+Explanation: ged: It returns 649 items but for each 
+result it display the character length of the string. 
+The first couple are 38, 64, 15, 36, etc...
+
+2D)
+Expression: //sd/string-length() => max()
+Results: Max string length for sd is 842 characters
+
+2E)
+Expression: //sp[string-length("462")] 
+Results: Speech with Alec
+
+
+3A)
+Expression: //sp[contains(., "Iraq")]/spk[text()] 
+Results: BOND
+
+3B)
+Expression: //sp/spk/lower-case (.)
+Results: bond
+
+3C)
+Expression: //sp/substring(spk/lower-case(.), 2)  
+Results:649 items ond, hadow, ond, lec, etc...
+
+3D)
+Expression: //sp/substring(spk/upper-case(.),1,1)
+Results: 649 items B, S, B, etc...
+
+3E)
+Expression://sp/concat(substring(spk/upper-case(.),1,1),string-join((substring(spk/lower-case(.), 2) )))  
+Results: ged: I wasn't able to figure out how to concat and string-join 
+the functions for the speaker names for lower case and uppercase
+
+
+
