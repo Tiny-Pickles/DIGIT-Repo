@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Calendar Entries</title>
+            <editor>Grace Dill</editor>
+
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <date when="1908"/>BY FRIENDSHIP CALENDAR CO.</publisher>
+            <!-- ged: I added a date element and cleaned up the pubicationStmt-->
+            <pubPlace> NEW BRITAIN, CONN</pubPlace>
+
+         </publicationStmt>
+         <sourceDesc>
+            <!-- <ab>Calendar entries found in a baby album from Mary Behrend</ab> -->
+            <msDesc>
+               <msIdentifier>
+                  <repository>Penn State Erie, The Behrend College Library</repository>
+               </msIdentifier>
+               <physDesc>
+                  <handDesc>
+                     <handNote xml:id="redPen" medium="red ink" script="handwritten">This is were
+                        Mary Behrend wrote in red pen.</handNote>
+                     <handNote xml:id="blackPen" medium="black ink" script="handwritten">This is
+                        were Mary Behrend wrote in black pen.</handNote>
+                  </handDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <!-- ged: I changed the p element that is within the body element to ab becuase 
+      I think this is more of an anonymous block of information from the source rather than a paragraph..
+      Also I added a hi element to display any text that was underlined or written in a different color. 
+      I added various attributes to other elements as well like the div element. I tried to use figure and 
+      graphic elements to describe the images and drawings on the page-->
+      <body>
+         <div n="1" type="calenderEntry">
+            <ab>
+               <date>
+                  <lb/>January 30, 1909. <lb/>Saturday </date>
+               <lb/>
+               <figure>
+                  <figDesc>A man sitting in bed looking at his alarm clock on the nightstand table.
+                     The image is in black and white.</figDesc>
+                  <graphic
+                     url="https://newtfire.org/courses/tutorials/TEI-images/mary-behrend-calendar-1909/IMG_2041.jpg"
+                  />
+               </figure>
+               <lb/><name>E.R.B</name>
+               <quote>
+                  <lb/>"That damned old clock <lb/>give me a ????? <lb/>Each morning when it's dark
+                     <lb/><hi rend="underline">It likes</hi> the fun, but I'm ????? <lb/>To tire of
+                  the dark!" </quote>
+            </ab>
+         </div>
+         <div n="2" type="calenderEntry">
+            <ab>
+               <date>
+                  <lb/><hi hand= "redPen">F</hi>ebruary 16, 1909. <lb/>Tuesday </date>
+               <lb/><figure>
+                  <figDesc>This drawing is a man holding a bug that is standing under a tree. This
+                     image is hand-drawn with some color.</figDesc>
+                  <graphic
+                     url="https://newtfire.org/courses/tutorials/TEI-images/mary-behrend-calendar-1909/IMG_2042.jpg"
+                  />
+               </figure>
+               <lb/><name>Mr. Behrend</name> finds a <lb/> ??? bug! <lb/><hi rend="red">? under if
+                  you have found Mary lately</hi>
+            </ab>
+         </div>
+         <div n="3" type="calenderEntry">
+            <ab>
+               <lb/><hi hand= "redPen">F</hi>ebruary 17, 1909. <lb/>Wednesday <lb/><figure>
+                  <figDesc>There is no image or drawing on the page just text.</figDesc>
+                  <graphic
+                     url="https://newtfire.org/courses/tutorials/TEI-images/mary-behrend-calendar-1909/IMG_2046.jpg"
+                  />
+               </figure>
+               <lb/>Each Morning <hi rend="underline">very</hi> early <lb/>When all is dark &amp;
+               still <lb/><unclear reason="illegible">????? ??? ??</unclear> in likely blackness
+               <lb/>To work at <placeName>Hammermill</placeName>
+               <lb/>I really think he's very good <lb/>to get it when it's dark <lb/>for this he <hi
+                  rend="underline">says</hi> he doesn't mind<lb/>
+               <unclear reason="illegible">--</unclear> can't be a <hi rend="underline">lark</hi>! <lb/>
+               <hi hand= "redPen">Pour Thing! is it still dark where you arise?</hi>
+            </ab>
+         </div>
+         <div n="4" type="calenderEntry">
+            <ab>
+               <lb/><hi hand= "redPen">M</hi>arch 8, 1909. <lb/>Monday <lb/><figure>
+                  <figDesc>There is a big red question drawn on the page.</figDesc>
+                  <graphic
+                     url="https://newtfire.org/courses/tutorials/TEI-images/mary-behrend-calendar-1909/IMG_2048.jpg"
+                  />
+               </figure>
+               <hi hand= "redPen">
+                  <lb/>Perhaps this is <lb/>the day, this I <lb/>think it will or <lb/>later. Love.
+                     <name>M.</name></hi>
+            </ab>
+         </div>
+      </body>
+   </text>
+</TEI>
