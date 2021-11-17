@@ -51,22 +51,25 @@
         <h2 id="{descendant::title/@xml:id}" class="titles"><xsl:apply-templates/></h2><!--ged: needs fixed -->
     </xsl:template>
     
+    
     <xsl:template match="body">
         <div class="body"><xsl:apply-templates/></div>
     </xsl:template>
+    
     
     <xsl:template match="p">
         <div class="paras"><span class="lineNum"><xsl:value-of select="@n"/></span><xsl:apply-templates/></div>
     </xsl:template>
     
-    <xsl:template match="facsimile">
+    
+    <!--<xsl:template match="facsimile">
         <div class="images"><xsl:apply-templates/></div>
-    </xsl:template>
+    </xsl:template>-->
     <!-- ged: I added some template rules to get rid of the output in the HTML for 
     paperOrigin and transDesc nodes and the fw in the memservice-->
-    <xsl:template match="paperOrigin"></xsl:template>
+   <xsl:template match="paperOrigin"></xsl:template>
     <xsl:template match="transDesc"></xsl:template>
-    <xsl:template match="fw"></xsl:template>
+   <xsl:template match="fw"></xsl:template>
     <!-- develop --> 
   
     
