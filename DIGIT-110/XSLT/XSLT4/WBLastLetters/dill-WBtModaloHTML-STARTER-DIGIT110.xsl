@@ -22,7 +22,9 @@
                 <section id="toc">
                     <h2>Contents</h2>
                     <ul>
-                      <xsl:apply-templates select="$WBColl//xml" mode="toc"/>   
+                      <xsl:apply-templates select="$WBColl//xml" mode="toc">
+                          <xsl:sort select="descendant::date[1]"/>
+                      </xsl:apply-templates>   
                     </ul>
                 </section>
                 <section id="fulltext">            
@@ -35,20 +37,18 @@
     
     <!--Templates in toc mode for the table of contents -->
     <xsl:template match="xml" mode="toc">
-        <li><xsl:apply-templates select="meta//title"/></li>
+        <li><a href="#{descendant::title/@xml:id}"><xsl:apply-templates select="meta//title"/></a></li>
     </xsl:template>
     
 
- 
     <!--Normal templates for fulltext view -->
     <!--<xsl:template match="xml">
         <xsl:apply-templates/> 
     </xsl:template>-->
     
-    
-    
+  
     <xsl:template match="title">
-        <h2 class="titles"><xsl:apply-templates/></h2>
+        <h2 id="{descendant::title/@xml:id}" class="titles"><xsl:apply-templates/></h2><!--ged: needs fixed -->
     </xsl:template>
     
     <xsl:template match="body">
@@ -62,7 +62,11 @@
     <xsl:template match="facsimile">
         <div class="images"><xsl:apply-templates/></div>
     </xsl:template>
-    
+    <!-- ged: I added some template rules to get rid of the output in the HTML for 
+    paperOrigin and transDesc nodes and the fw in the memservice-->
+    <xsl:template match="paperOrigin"></xsl:template>
+    <xsl:template match="transDesc"></xsl:template>
+    <xsl:template match="fw"></xsl:template>
     <!-- develop --> 
   
     
