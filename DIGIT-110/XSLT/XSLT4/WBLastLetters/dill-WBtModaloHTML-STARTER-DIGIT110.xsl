@@ -14,7 +14,7 @@
         <html>
             <head>
                 <title>Warren Behrend’s Last Correspondence and Memorial</title>
-                <link rel="stylesheet" type="text/css" href="style.css"/>
+                <link rel="stylesheet" type="text/css" href="dill-WBletters-style.css"/>
             </head>
             <body>
                 <h1>Warren Behrend’s Last Correspondence and Memorial</h1>

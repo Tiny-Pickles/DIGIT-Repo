@@ -1,0 +1,27 @@
+*{
+    background-color: #DAF1DE;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 5px 5px 5px;
+    padding-left: 3px;
+}
+#toc{
+    font-size: 32px;
+    color: #1D2951;
+}
+#fulltext{
+    font-size: 28px;
+    color: #1D2951;
+}
+.titles{
+font-size: 24px;
+    color: #235347;
+}
+.paras{
+font-size: 18px;
+    color: #235347;
+}
+.lineNum{
+    padding-left: 5px;
+    color: #610c04;
+    font-style: italic;
+}
